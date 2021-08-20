@@ -1,0 +1,4 @@
+<mat-toolbar class="header">
+  <span class="title">List of cities</span>
+</mat-toolbar>
+<app-weather-cities *ngFor="let city of Cities" [routerLink]="['/details', city]" [cityName]="city"></app-weather-cities>

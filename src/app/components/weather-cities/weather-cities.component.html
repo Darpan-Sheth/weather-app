@@ -1,0 +1,18 @@
+<div class="container">
+  <mat-grid-list cols="1" rowHeight="12:1" class="cities-list">
+    <mat-grid-tile>
+      <table mat-table>
+        <th mat-header-row>{{ CityDetails?.name }}</th>
+        <tr mat-row>
+          <td>Temp: {{ CityDetails?.main?.temp }}</td>
+        </tr>
+        <tr mat-row>
+          <td>Sunrise: {{ CityDetails?.sys?.sunrise }}</td>
+        </tr>
+        <tr mat-row>
+          <td>Sunset: {{ CityDetails?.sys?.sunset }}</td>
+        </tr>
+      </table>
+    </mat-grid-tile>
+  </mat-grid-list>
+</div>

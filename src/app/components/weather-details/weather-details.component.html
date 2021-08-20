@@ -1,0 +1,19 @@
+<mat-toolbar class="header">
+  <span routerLink="" class="back-link">Back</span>
+  <span class="details-header">5 Days weather of {{CityName}} at 9 am</span>
+</mat-toolbar>
+<div class="container">
+  <mat-grid-list cols="5" class="cities-list">
+    <mat-grid-tile *ngFor="let list of ForecastList">
+      <table mat-table>
+        <th mat-header-row>{{list.dt_txt}}</th>
+        <tr mat-row>
+          <td>Temperature: {{list.main.temp}}</td>
+        </tr>
+        <tr mat-row>
+          <td>Sea Level: {{list.main.sea_level}}</td>
+        </tr>
+      </table>
+    </mat-grid-tile>
+  </mat-grid-list>
+</div>
